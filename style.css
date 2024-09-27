@@ -1,0 +1,291 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 200%;
+    overflow-x: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.hero {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./mvcee1.jpg) no-repeat center center/cover;
+    background-size: cover;
+    transition: background-color 0.5s ease;
+    z-index: -1;
+}
+
+.header {
+    position: relative;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    margin: 0;
+    padding-left: 100px;
+    gap: 0;
+  
+
+}
+
+.fade {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0); 
+    height: 100%; 
+    transition: background-color 0.5s ease;
+ }
+
+ .navbar{
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4f3cad;
+    padding: 15px 30px;
+ }
+
+ .logo a{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+ }
+
+ .menu{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-family: "raleway" , "sans-serif";
+ }
+
+ .menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+ }
+
+ .menu li a:hover {
+    background-color: #fc7d29;
+    color: #fff;
+    border-radius: 5px;
+}
+
+ h1{
+    height: 100%;
+    width: 100%;
+    padding-top: 150px;
+    padding-left: 50px;
+    background-position: center;
+    font-size: 100px;
+    font-family: "Raleway", sans-serif;
+    text-align: left;
+ }
+
+ span{
+    color: #fc7d29;
+ }
+
+ .prn {
+    position: relative;
+    bottom: 130px;
+    left: 450px;
+    font-size: 20px;
+    color: #ffffff;
+ }
+
+ .about{
+    width: 800px;
+    padding-left: 30px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    line-height: 30px;
+    
+ }
+
+ .art {
+   width: 800px;
+   height: 400px;
+   padding-right: 100px;
+   font-weight: lighter;
+   letter-spacing: 1px;
+   line-height: 30px;
+   margin-left: auto;
+   position: relative;
+   bottom: 300px;
+
+ }
+
+ .boxes{
+   height: 400px;
+   width: 350px;
+   position: relative;
+   left: 900px;
+   bottom: 500px;
+   overflow: hidden;
+   border-radius: 100px;
+ }
+
+ .left-boxes{
+   height: 400px;
+   width: 350px;
+   position: relative;
+   overflow: hidden;
+   border-radius: 100px;
+   bottom: 350px; 
+   right: 500px;
+ }
+
+ .boxes, .left-boxes {
+   height: 400px;
+   width: 350px;
+   position: relative;
+   overflow: hidden;
+   border-radius: 100px;
+ }
+
+ .boxes img, .left-boxes img {
+   width: 100%;
+   height: auto;
+   position: absolute;
+   top: 0; 
+   left: 0; 
+   opacity: 0;
+   transition: opacity 3s ease;
+}
+
+ .slide{
+   
+   width: 100%;
+   opacity: 0;
+   transition: opacity 3s ease;
+ }
+
+ .slide.active {
+   display: block;
+   opacity: 1;
+   
+}
+
+
+
+ section{
+   margin-right: 100px;
+   display: grid;
+   place-items: center;
+   align-items: center;
+   min-height: 200px;
+   font-family: "Luckiest Guy", cursive;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 3.5rem;
+   position: relative;
+   bottom: 100px;
+ }
+
+ .hid1{
+   margin-top: -150px;
+ }
+
+ .hidden{
+   height: 600px;
+   opacity: 0;
+   filter: blur(5px);
+   transform: translatex(-100px);
+   transition: opacity 4s ease, transform 4s ease;
+   transition-delay: 0s;
+   
+ }
+
+ .hidden-left{
+   height: 600px;
+
+ }
+
+ .show{
+   opacity: 1;
+   filter: blur(0);
+   transform: translatex(0);
+ }
+
+.keep-scrl{
+   height: 600px;
+}
+
+.footer-container {
+  box-sizing: border-box;
+}
+
+footer{
+  background-color: #4f3cad;
+  overflow: hidden;
+}
+
+.footer-container{
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.social-icons{
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.social-icons a i{
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+
+.social-icons a:hover{
+  background-color: #fc7d29;
+  transition: 0.5s;
+
+}
+
+.social-icons a i:hover{
+  color: white;
+  transition: 0.5s;
+}
+
+.footer-nav{
+  margin: 30px 0;
+}
+
+.footer-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+
+}
+
+.footer-nav ul li a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footer-nav ul li a:hover{
+  opacity: 1;
+}
+
+.footerbottom{
+  background-color: #F5F5F5;
+  padding: 10px;
+  text-align: center;
+}
+
