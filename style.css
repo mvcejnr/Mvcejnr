@@ -1,240 +1,190 @@
-body{
-    padding: 0;
-    margin: 0;
-    height: 200%;
-    overflow-x: hidden;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+body {
+  font-size: 16px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 200%;
+  overflow-x: hidden;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .hero {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url(./mvcee1.jpg) no-repeat center center/cover;
-    background-size: cover;
-    transition: background-color 0.5s ease;
-    z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./mvcee1.jpg) no-repeat center center/cover;
+  transition: background-color 0.5s ease;
+  z-index: -1;
 }
 
 .header {
-    position: relative;
-    justify-content: center;
-    height: 100vh;
-    color: white;
-    margin: 0;
-    padding-left: 100px;
-    gap: 0;
-  
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
 
+.header-text {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  
 }
 
 .fade {
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0); 
-    height: 100%; 
-    transition: background-color 0.5s ease;
- }
-
- .navbar{
-    height: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #4f3cad;
-    padding: 15px 30px;
- }
-
- .logo a{
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
- }
-
- .menu{
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    font-family: "raleway" , "sans-serif";
- }
-
- .menu li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    transition: background-color 0.3s, color 0.3s;
- }
-
- .menu li a:hover {
-    background-color: #fc7d29;
-    color: #fff;
-    border-radius: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  background-color: rgba(0, 0, 0, 0);
+  height: 100%; 
+  transition: background-color 0.5s ease;
 }
 
- h1{
-    height: 100%;
-    width: 100%;
-    padding-top: 150px;
-    padding-left: 50px;
-    background-position: center;
-    font-size: 100px;
-    font-family: "Raleway", sans-serif;
-    text-align: left;
- }
-
- span{
-    color: #fc7d29;
- }
-
- .prn {
-    position: relative;
-    bottom: 130px;
-    left: 450px;
-    font-size: 20px;
-    color: #ffffff;
- }
-
- .about{
-    width: 800px;
-    padding-left: 30px;
-    font-weight: lighter;
-    letter-spacing: 1px;
-    line-height: 30px;
-    
- }
-
- .art {
-   width: 800px;
-   height: 400px;
-   padding-right: 100px;
-   font-weight: lighter;
-   letter-spacing: 1px;
-   line-height: 30px;
-   margin-left: auto;
-   position: relative;
-   bottom: 300px;
-
- }
-
- .boxes{
-   height: 400px;
-   width: 350px;
-   position: relative;
-   left: 900px;
-   bottom: 500px;
-   overflow: hidden;
-   border-radius: 100px;
- }
-
- .left-boxes{
-   height: 400px;
-   width: 350px;
-   position: relative;
-   overflow: hidden;
-   border-radius: 100px;
-   bottom: 350px; 
-   right: 500px;
- }
-
- .boxes, .left-boxes {
-   height: 400px;
-   width: 350px;
-   position: relative;
-   overflow: hidden;
-   border-radius: 100px;
- }
-
- .boxes img, .left-boxes img {
-   width: 100%;
-   height: auto;
-   position: absolute;
-   top: 0; 
-   left: 0; 
-   opacity: 0;
-   transition: opacity 3s ease;
+.navbar {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px 15px 10px; 
+  background-color: #4f3cad;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
 
- .slide{
-   
-   width: 100%;
-   opacity: 0;
-   transition: opacity 3s ease;
- }
-
- .slide.active {
-   display: block;
-   opacity: 1;
-   
+.logo a {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-family: "Raleway", sans-serif;
+}
 
+.menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
 
- section{
-   margin-right: 100px;
-   display: grid;
-   place-items: center;
-   align-items: center;
-   min-height: 200px;
-   font-family: "Luckiest Guy", cursive;
-   font-weight: 400;
-   font-style: normal;
-   font-size: 3.5rem;
-   position: relative;
-   bottom: 100px;
- }
+.menu li a:hover {
+  background-color: #fc7d29;
+  color: #fff;
+  border-radius: 5px;
+}
 
- .hid1{
-   margin-top: -150px;
- }
+.header h1 {
+  margin: 0;
+  font-size: 100px;
+  font-family: "Raleway", sans-serif;
+  text-align: center; /* Center text */
+}
 
- .hidden{
-   height: 600px;
-   opacity: 0;
-   filter: blur(5px);
-   transform: translatex(-100px);
-   transition: opacity 4s ease, transform 4s ease;
-   transition-delay: 0s;
-   
- }
+span {
+  color: #fc7d29;
+}
 
- .hidden-left{
-   height: 600px;
+.prn {
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center; /* Center text */
+  margin-top: 0;
+}
 
- }
+.about, .art {
+  width: 800px;
+  padding: 100px 0;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-align: center; /* Center text */
+}
 
- .show{
-   opacity: 1;
-   filter: blur(0);
-   transform: translatex(0);
- }
+.boxes, .left-boxes {
+  height: 400px;
+  width: 350px;
+  overflow: hidden;
+  border-radius: 100px;
+  position: relative;
+  margin: 0 auto; 
+  margin-top: 100px;
+}
 
-.keep-scrl{
-   height: 600px;
+.boxes img, .left-boxes img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 3s ease;
+}
+
+.slide {
+  opacity: 0;
+  transition: opacity 3s ease;
+}
+
+.slide.active {
+  display: block;
+  opacity: 1;
+}
+
+section {
+  display: grid;
+  place-items: center;
+  min-height: 200px;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 3.5rem;
+  margin: 0 auto; /* Center section */
+}
+
+.hidden {
+  height: 600px;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100px);
+  transition: opacity 4s ease, transform 4s ease;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 
 .footer-container {
   box-sizing: border-box;
 }
 
-footer{
+footer {
   background-color: #4f3cad;
-  overflow: hidden;
 }
 
-.footer-container{
+.footer-container {
   width: 100%;
   padding: 70px 30px 20px;
 }
 
-.social-icons{
+.social-icons {
   display: flex;
   justify-content: center;
 }
 
-.social-icons a{
+.social-icons a {
   text-decoration: none;
   padding: 10px;
   background-color: white;
@@ -242,24 +192,18 @@ footer{
   border-radius: 50%;
 }
 
-.social-icons a i{
+.social-icons a i {
   font-size: 2em;
   color: black;
   opacity: 0.9;
 }
 
-.social-icons a:hover{
+.social-icons a:hover {
   background-color: #fc7d29;
   transition: 0.5s;
-
 }
 
-.social-icons a i:hover{
-  color: white;
-  transition: 0.5s;
-}
-
-.footer-nav{
+.footer-nav {
   margin: 30px 0;
 }
 
@@ -267,7 +211,6 @@ footer{
   display: flex;
   justify-content: center;
   list-style-type: none;
-
 }
 
 .footer-nav ul li a {
@@ -279,13 +222,96 @@ footer{
   transition: 0.5s;
 }
 
-.footer-nav ul li a:hover{
+.footer-nav ul li a:hover {
   opacity: 1;
 }
 
-.footerbottom{
+.footerbottom {
   background-color: #F5F5F5;
   padding: 10px;
   text-align: center;
+}
+
+
+
+/* Medium screens (tablets, ~768px) */
+@media (max-width: 768px) {
+
+  h1{
+    font-size: small;
+    margin-top: 0;
+    margin-right: 500px;
+  }
+  .about {
+      width: 100%; /* Full width on smaller screens */
+      float: none; /* Disable floating */
+      margin-right: 0; /* Reset margin */
+      text-align: center; /* Center text */
+  }
+
+  .boxes {
+      float: none; /* Disable floating */
+      width: 100%; /* Full width for the boxes */
+      margin-top: 20px; /* Add some top margin */
+  }
+
+  .art {
+      padding: 50px 20px; /* Adjust padding */
+  }
+
+  .navbar {
+      flex-direction: column; /* Stack navbar items vertically */
+      padding: 10px; /* Adjust padding */
+  }
+
+  .menu {
+      flex-direction: row;
+      font-size: smaller; /* Stack menu items */
+      gap: 10px;
+      margin-right: 50px;
+      margin-top: 30px;
+  }
+}
+
+/* Small screens (phones, ~480px) */
+@media (max-width: 480px) {
+  body {
+      font-size: 14px; /* Smaller base font size */
+  }
+
+  .header h1 {
+    
+      font-size: 50px;
+      padding-left: 500px; /* Adjust heading size */
+  }
+
+  .about {
+      font-size: 14px; /* Adjust font size */
+  }
+
+  .prn {
+      font-size: 16px; /* Adjust font size */
+  }
+
+  .about, .art {
+      padding: 30px 10px; /* Less padding */
+  }
+
+  .boxes {
+      width: 100%; /* Full width */
+      margin-top: 10px; /* Reduced margin */
+  }
+
+  .left-boxes {
+      width: 100%; /* Full width for left boxes */
+  }
+
+  .social-icons a {
+      padding: 5px; /* Smaller icon size */
+  }
+
+  .footer-nav ul {
+      flex-direction: column; /* Stack footer items vertically */
+  }
 }
 
