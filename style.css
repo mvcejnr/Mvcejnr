@@ -34,8 +34,9 @@ body {
 }
 
 .header-text {
-  margin: 50px 0 150px 0;
-  
+  display: grid;
+  justify-content: center;
+  padding-top: 50px;
 }
 
 .h2-text{
@@ -61,14 +62,14 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px 15px 10px; 
-  background-color: #4f3cad;
+  background-color: #000;
   position: fixed;
   top: 0;
   z-index: 1000;
 }
 
 .logo a {
-  margin-left: 20px;
+  margin-left: 45px;
   color: white;
   font-size: 24px;
   font-weight: bold;
@@ -97,13 +98,13 @@ body {
 }
 
 
-
 .header h1 {
-  margin: 0;
-  font-size: 100px;
-  font-family: "Raleway", sans-serif;
+  margin: -40px 35px 0px 35px;
+  font-size: 135px;
+  font-family: "League Gothic", sans-serif;
   text-align: center; /* Center text */
-  line-height: 90px;
+  line-height: 125px;
+  font-style: normal;
 }
 
 span {
@@ -111,11 +112,18 @@ span {
 }
 
 .prn {
-  font-size: 20px;
+  font-size: 17px;
   color: #ffffff;
   text-align: center; /* Center text */
-  margin-top: 0;
+  margin-top: -13px;
+  padding-bottom: 150px;
+  margin-left: 15px;
 }
+
+.p-text{
+  margin: 50px 200px;
+}
+
 
 .about , .art{
   width: 100%;
@@ -184,7 +192,7 @@ section {
 }
 
 footer {
-  background-color: #4f3cad;
+  background-color: #000;
 }
 
 .footer-container {
@@ -286,10 +294,20 @@ footer {
       margin-right: 50px;
       margin-top: 30px;
   }
+
+  .p-text{
+    margin: 0px 50px;
+  }
+
+  .footer-nav ul{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: 600px)  {
   body {
       font-size: 10px; /* Smaller base font size */
   }
@@ -299,9 +317,10 @@ footer {
 
   .header h1 {
     
-      font-size: 100px;
-      text-align: left;
-      margin-left: 150px;
+      font-size: 180px;
+      text-align: center;
+      margin-left: 80px;
+      line-height: 1;
   }
 
   .prn{
@@ -309,11 +328,8 @@ footer {
   }
 
   .navbar{
-    height: 15px;
-  }
-  
-  .menu{
-    font-size: 16px;
+    height: 35px;
+    font-size: 1rem;
   }
 
   .about {
@@ -321,7 +337,7 @@ footer {
   }
 
   .prn {
-      font-size: 16px; /* Adjust font size */
+      font-size: 20px; /* Adjust font size */
   }
 
   .about, .art {
@@ -339,9 +355,10 @@ footer {
   }
 
   .footer-nav ul {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center; /* Stack footer items vertically */
       padding-right: 30px;
+      gap: 10px;
   }
 }
 
