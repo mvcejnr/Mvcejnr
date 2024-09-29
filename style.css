@@ -250,7 +250,7 @@ footer {
 
 
 
-@media (min-width: 320px) and (max-width: 600px) {
+@media (max-width: 600px) {
 
   h1{
     font-size: small;
@@ -289,7 +289,7 @@ footer {
 }
 
 
-@media (min-width: 600px) and (max-width: 1440px) {
+@media (min-width: 600px) {
   body {
       font-size: 10px; /* Smaller base font size */
   }
@@ -310,7 +310,10 @@ footer {
 
   .navbar{
     height: 15px;
-    font-size: 1rem;
+  }
+  
+  .menu{
+    font-size: 16px;
   }
 
   .about {
