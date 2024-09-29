@@ -25,7 +25,7 @@ body {
 
 .header {
   height: 100vh;
-  color: white;
+  color: #fff2dd;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,7 +41,10 @@ body {
 
 .h2-text{
   margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: lighter;
 }
+
 
 .fade {
   width: 200vw;
@@ -122,6 +125,7 @@ span {
 
 .p-text{
   margin: 50px 200px;
+  font-size: 19px;
 }
 
 
@@ -141,7 +145,7 @@ span {
   border-radius: 100px;
   position: relative;
   margin: 0 auto; 
-  margin-top: 100px;
+  margin-top: 0px;
 }
 
  img{
@@ -169,16 +173,16 @@ section {
   place-items: center;
   min-height: 200px;
   font-family: "Luckiest Guy", cursive;
-  font-size: 3.5rem;
   margin: 0 auto; /* Center section */
 }
 
 .hidden {
   height: 600px;
+  font-size: 35px;
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100px);
-  transition: opacity 4s ease, transform 4s ease;
+  transition: opacity 2s ease, transform 2s ease;
 }
 
 .show {
@@ -203,6 +207,7 @@ footer {
 .social-icons {
   display: flex;
   justify-content: center;
+  color: white;
 }
 
 .social-icons a {
@@ -226,6 +231,7 @@ footer {
 
 .footer-nav {
   margin: 30px 0;
+  margin-right: 35px;
 }
 
 .footer-nav ul {
@@ -274,8 +280,13 @@ footer {
 
   .boxes {
       float: none; /* Disable floating */
-      width: 100%; /* Full width for the boxes */
+      width: 75%; /* Full width for the boxes */
       margin-top: 20px; /* Add some top margin */
+  }
+
+  .left-boxes{
+    width: 75%;
+    margin-top: 50px;
   }
 
   .art {
@@ -285,6 +296,8 @@ footer {
   .navbar {
       flex-direction: column; /* Stack navbar items vertically */
       padding: 10px; /* Adjust padding */
+  }.prn{
+    margin-right: 15px;
   }
 
   .menu {
@@ -297,6 +310,14 @@ footer {
 
   .p-text{
     margin: 0px 50px;
+  }
+
+  .hidden{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+    font-size: 38px;
   }
 
   .footer-nav ul{
@@ -342,6 +363,11 @@ footer {
 
   .about, .art {
       padding: 30px 10px; /* Less padding */
+  }
+
+  .p-text{
+    font-size: 25px;
+    margin: 50px 150px;
   }
 
   .boxes {
