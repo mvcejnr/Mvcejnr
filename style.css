@@ -1,15 +1,20 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-   
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
   font-size: 16px;
   width: 100%;
   padding: 0;
   margin: 0;
   height: 200%;
   overflow-x: hidden;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: "Lora", serif;
+  font-style: normal;
 }
 
 .hero {
@@ -22,6 +27,18 @@ body {
   transition: background-color 0.5s ease;
   z-index: -1;
 }
+
+.hero::before {
+	content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
 
 .header {
   height: 100vh;
@@ -52,8 +69,8 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center content horizontally */
-  justify-content: center; /* Center content vertically */
+  align-items: center;
+  justify-content: center; 
   background-color: rgba(0, 0, 0, 0);
   transition: background-color 0.5s ease;
 }
@@ -72,7 +89,7 @@ body {
 }
 
 .logo a {
-  margin-left: 45px;
+  
   color: white;
   font-size: 24px;
   font-weight: bold;
@@ -105,7 +122,7 @@ body {
   margin: -40px 35px 0px 35px;
   font-size: 135px;
   font-family: "League Gothic", sans-serif;
-  text-align: center; /* Center text */
+  text-align: center; 
   line-height: 125px;
   font-style: normal;
 }
@@ -117,7 +134,7 @@ span {
 .prn {
   font-size: 17px;
   color: #ffffff;
-  text-align: center; /* Center text */
+  text-align: center; 
   margin-top: -13px;
   padding-bottom: 150px;
   margin-left: 15px;
@@ -135,11 +152,11 @@ span {
   font-weight: lighter;
   letter-spacing: 1px;
   line-height: 30px;
-  text-align: center; /* Center text */
+  text-align: center; 
 }
 
 .boxes , .left-boxes {
-  height: 400px;
+  height: 350px;
   width: 400px;
   overflow: hidden;
   border-radius: 100px;
@@ -173,7 +190,7 @@ section {
   place-items: center;
   min-height: 200px;
   font-family: "Luckiest Guy", cursive;
-  margin: 0 auto; /* Center section */
+  margin: 0 auto; 
 }
 
 .hidden {
@@ -224,7 +241,7 @@ footer {
   opacity: 0.9;
 }
 
-.social-icons a:hover {
+.social-icons > a:hover {
   background-color: #fc7d29;
   transition: 0.5s;
 }
@@ -260,7 +277,108 @@ footer {
   text-align: center;
 }
 
+.singles-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 5px;
+  
+}
 
+.singles-container{
+  display: flex;
+  margin-top: 330px;
+  height: 100vh;
+}
+
+.singles-header{
+  position: absolute;
+  top: 100px;
+  padding-left: 130px;
+  color: #F5F5F5;
+}
+
+
+.column{
+  margin: 10px;
+}
+
+.singles-box{
+    color: white;
+    padding: 12px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 8px;
+    width: 120px;
+    height: 120px;
+}
+
+.box1{
+  background-image: url(./Omg-image.jpg);
+  background-size: cover;
+  margin-bottom: 140px;
+}
+
+.box2{
+  background-image: url(./high.jpg);
+  background-size: cover;
+  margin-bottom: 140px;
+}
+
+.box3{
+  background-image: url(./away.jpg);
+  background-size: cover;
+  margin-bottom: 140px;
+}
+
+.box4{
+  background-image: url(./9to5.jpg);
+  background-size: cover;
+  margin-bottom: 140px;
+}
+
+.box5{
+  background-image: url(./wanna\ be.jpg);
+  background-size: cover;
+  margin-bottom: 140px;
+
+}
+
+.column-right{
+  margin-top: 150px;
+}
+
+.box-texts{
+  font-size: 10px;
+  line-height: 10px;
+  text-align: left;
+  position: relative;
+  top: 130px;
+}
+
+.box-texts > a{
+  text-decoration: none;
+  color: #F5F5F5;
+  opacity: 0.8;
+  margin-top: -5px;
+}
+
+.features-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 350px;
+  margin-top: 100px;
+  
+}
+
+.features-header{
+  position: relative;
+  bottom: 350px;
+  color: #F5F5F5;
+}
 
 
 
@@ -272,16 +390,16 @@ footer {
     margin-right: 500px;
   }
   .about {
-      width: 100%; /* Full width on smaller screens */
-      float: none; /* Disable floating */
-      margin-right: 0; /* Reset margin */
-      text-align: center; /* Center text */
+      width: 100%; 
+      float: none; 
+      margin-right: 0; 
+      text-align: center; 
   }
 
   .boxes {
-      float: none; /* Disable floating */
-      width: 75%; /* Full width for the boxes */
-      margin-top: 20px; /* Add some top margin */
+      float: none; 
+      width: 75%; 
+      margin-top: 20px; 
   }
 
   .left-boxes{
@@ -290,19 +408,19 @@ footer {
   }
 
   .art {
-      padding: 50px 20px; /* Adjust padding */
+      padding: 50px 20px; 
   }
 
   .navbar {
-      flex-direction: column; /* Stack navbar items vertically */
-      padding: 10px; /* Adjust padding */
+      flex-direction: column; 
+      padding: 10px; 
   }.prn{
     margin-right: 15px;
   }
 
   .menu {
       flex-direction: row;
-      font-size: smaller; /* Stack menu items */
+      font-size: smaller; 
       gap: 10px;
       margin-right: 50px;
       margin-top: 30px;
@@ -330,10 +448,14 @@ footer {
 
 @media (min-width: 600px)  {
   body {
-      font-size: 10px; /* Smaller base font size */
+      font-size: 10px; 
   }
   .fade{
     width: 100%;
+  }
+
+  .logo > a{
+    margin-left: 45px;
   }
 
   .header h1 {
@@ -354,15 +476,15 @@ footer {
   }
 
   .about {
-      font-size: 14px; /* Adjust font size */
+      font-size: 14px; 
   }
 
   .prn {
-      font-size: 20px; /* Adjust font size */
+      font-size: 20px; 
   }
 
   .about, .art {
-      padding: 30px 10px; /* Less padding */
+      padding: 30px 10px; 
   }
 
   .p-text{
@@ -372,19 +494,36 @@ footer {
 
   .boxes {
      
-      margin-top: 10px; /* Reduced margin */
+      margin-top: 10px; 
   }
 
   
   .social-icons a {
-      padding: 5px; /* Smaller icon size */
+      padding: 5px; 
   }
 
   .footer-nav ul {
       flex-direction: row;
-      align-items: center; /* Stack footer items vertically */
+      align-items: center; 
       padding-right: 30px;
       gap: 10px;
   }
+
+  #single-container1 {
+    width: 500px;
+    display: flex;
+    position: relative;
+    left: 200px;
+    bottom: 300px;
+  }
+
+  #single-container2{
+    width: 500px;
+    display: flex;
+    position: absolute;
+    left: 1000px;
+    bottom: 300px;
+  }
+
 }
 
